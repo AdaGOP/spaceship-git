@@ -10,9 +10,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var cokcpitOutlet: UIButton!
+    @IBOutlet weak var engineOutlet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func navigateToCockpit(_ sender: UIButton) {
@@ -41,6 +41,6 @@ class ViewController: UIViewController {
         let electrical = electricalStoryboard.instantiateViewController(withIdentifier: "electricalStoryboad") as! ElectricalViewController
         electrical.source = .control
         self.present(electrical, animated: true)
+        //
     }
 }
-

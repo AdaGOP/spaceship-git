@@ -42,7 +42,7 @@
                                 <rect key="frame" x="33" y="584" width="151" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Engine room            &gt;">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
                                 </state>
                                 <connections>
                                     <action selector="navigateToEngine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R3d-JQ-zZV"/>
@@ -98,6 +98,7 @@
                     </view>
                     <connections>
                         <outlet property="cokcpitOutlet" destination="7rP-WI-S4c" id="90x-nS-XbY"/>
+                        <outlet property="engineOutlet" destination="F1W-Bd-Uae" id="g2o-E8-yJs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -108,6 +109,9 @@
     <resources>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
