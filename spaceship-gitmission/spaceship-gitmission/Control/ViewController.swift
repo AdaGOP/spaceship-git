@@ -16,13 +16,13 @@ class ViewController: UIViewController {
     }
 
     //additional changes for Har-Electrical-3
-    @IBAction func navigateToCockpit(_ sender: UIButton) {
-        let cockpitStoryboard = UIStoryboard(name: "Cockpit", bundle: nil)
-        let cockpit = cockpitStoryboard.instantiateViewController(withIdentifier: "cockpitstoryboard") as! CockpitViewController
-        cockpit.source = .control
-        self.present(cockpit, animated: true)
-        // test
-    }
+//    @IBAction func navigateToCockpit(_ sender: UIButton) {
+//        let cockpitStoryboard = UIStoryboard(name: "Cockpit", bundle: nil)
+//        let cockpit = cockpitStoryboard.instantiateViewController(withIdentifier: "cockpitstoryboard") as! CockpitViewController
+//        cockpit.source = .control
+//        self.present(cockpit, animated: true)
+//        // test
+//    }
     
     @IBAction func navigateToEngine(_ sender: UIButton) {
         let engineStoryboard = UIStoryboard(name: "Engine", bundle: nil)
