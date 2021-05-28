@@ -7,10 +7,12 @@
 
 import UIKit
 
+/**/
 protocol ElectricalProtocol: AnyObject {
     func navigateToControlRoom()
 }
 
+/**/
 class ElectricalViewController: UIViewController {
 
     var source: Access? = .control
@@ -33,6 +35,7 @@ class ElectricalViewController: UIViewController {
         }
     }
     
+    //Navigate to Fuel View Controller
     @IBAction func navigateToFuel(_ sender: UIButton) {
         if source == .fuel {
             dismiss(animated: true, completion: nil)
