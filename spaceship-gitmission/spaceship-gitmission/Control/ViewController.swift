@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var cokcpitOutlet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
