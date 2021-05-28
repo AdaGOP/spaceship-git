@@ -37,10 +37,14 @@ class ViewController: UIViewController {
         self.present(fuel, animated: true)
     }
     
+    //Navigation to Electrical
     @IBAction func navigateToElectrical(_ sender: UIButton) {
+        //create instance of Electrical view controller
         let electricalStoryboard = UIStoryboard(name: "Electrical", bundle: nil)
         let electrical = electricalStoryboard.instantiateViewController(withIdentifier: "electricalStoryboad") as! ElectricalViewController
+        //set the source to this view controller
         electrical.source = .control
+        //navigate to the electrical
         self.present(electrical, animated: true)
         //
     }
