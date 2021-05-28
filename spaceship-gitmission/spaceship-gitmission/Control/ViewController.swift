@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    //additional changes for Har-Electrical-3
     @IBAction func navigateToCockpit(_ sender: UIButton) {
         let cockpitStoryboard = UIStoryboard(name: "Cockpit", bundle: nil)
         let cockpit = cockpitStoryboard.instantiateViewController(withIdentifier: "cockpitstoryboard") as! CockpitViewController
@@ -38,6 +39,7 @@ class ViewController: UIViewController {
         self.present(fuel, animated: true)
     }
     
+    //additional changes foa Har-Electrical-3
     //Navigation to Electrical
     @IBAction func navigateToElectrical(_ sender: UIButton) {
         //create instance of Electrical view controller
@@ -47,6 +49,6 @@ class ViewController: UIViewController {
         electrical.source = .control
         //navigate to the electrical
         self.present(electrical, animated: true)
-        //
+        //additional changes in branch Har-Electrical-3
     }
 }
